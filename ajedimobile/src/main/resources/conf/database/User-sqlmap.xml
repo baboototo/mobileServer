@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="UserDAO">
+
+	<!-- 사용자 정보 조회 -->
+	<select id="UserDAO.selectUserInfo" parameterClass="java.lang.String" resultClass="java.util.HashMap">
+		SELECT	USER_CODE
+				, USER_NAME
+				, PASS_WORD
+		FROM	AjuCommRenew.DBO.USER_INFO_NEW
+		WHERE	USER_CODE = #USER_CODE#
+	</select>
+
+</sqlMap>
