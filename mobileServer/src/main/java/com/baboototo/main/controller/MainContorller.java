@@ -1,4 +1,4 @@
-package com.baboototo.springmvc.main.controller;
+package com.baboototo.main.controller;
 
 import org.springframework.web.bind.annotation.RestController;
 
